@@ -18,7 +18,7 @@ export class DummyApiService {
   }
 
   private handleError(error: HttpErrorResponse): Observable<any> {
-    alert('Data not found');
+    alert('Post not found');
     return throwError(error.message);
   }
 }
