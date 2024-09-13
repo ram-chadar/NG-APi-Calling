@@ -1,0 +1,29 @@
+<input type="number" name="num" [(ngModel)]="num">
+
+<button (click)="getData()">Get Data</button>
+
+&nbsp; &nbsp;
+
+<button>Get All Data</button>
+
+<div *ngIf="show">
+  <table border="1">
+    <tbody>
+      <tr>
+        <td>ID</td>
+        <td>{{ post.id }}</td>
+      </tr>
+
+      <tr>
+        <td>Title</td>
+        <td>{{ post.title }}</td>
+      </tr>
+
+      <tr>
+        <td>Body</td>
+        <td>{{ post.body }}</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
